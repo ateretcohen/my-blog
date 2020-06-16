@@ -1,0 +1,44 @@
+
+.menu{
+    span{
+        margin-left:1% ;
+    }
+    .menu-actions{
+      padding: 0.5% 0%;
+    }
+    #down{
+        float: right;
+        margin-right: 1%;
+    }
+    a:link {
+        text-decoration: none;
+        color:  var(--basicNegative);  
+      }
+      
+      a:visited {
+        text-decoration: none;
+        color: var(--basicNegative);
+      }
+      .download-p:hover{
+        color: var(--orenge);
+      }
+      .check-box{
+          background-color: var(--background-elements);
+          margin-bottom: 2%;
+          p{
+            padding: 0px 1%;  
+          }
+          .language-p:hover{
+              color: var(--blue);
+          }
+          span{
+            padding: 0px 1%; 
+          }
+          span:hover{
+              color: var(--green);
+          }
+          .Display-p:hover{
+            color: var(--green);
+          }
+      }
+}

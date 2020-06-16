@@ -1,0 +1,50 @@
+.panel{
+    padding:4vh 0% 4vh;
+    .inside-panel{
+        height: 7vh;
+        #panel-icon-left{
+         font-size: 4vh;
+         float: left;
+         padding: 0.7% 1% 0.7% 0px;
+     }
+     #panel-icon-right{
+        font-size: 4vh;
+        float: right;
+        padding: 0.7% 0px;
+
+     }
+       
+         #profil-pic{
+         float: left;
+         height: 7vh;
+         border-radius: 50px;
+         margin: 0px 1.5% 0px 3%;
+         }
+         #profil-title{
+            float: left;
+            margin-left: 0.1%;
+            #user-name{
+                font-weight: bold;
+            }
+        }    
+    } 
+
+    @media only screen and (max-width: 768px) {
+        #profil-pic{
+           height: 4vh;
+        }
+        span{
+            font-size: 14px;
+        }
+        .inside-panel{
+            height: 7vh;
+            #panel-icon-left{
+             padding: 2.5% 1% 0.7% 0px;
+         }
+         #panel-icon-right{
+            padding: 2.5% 0px;
+    
+         }
+        }
+}  
+}

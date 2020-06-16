@@ -1,0 +1,22 @@
+ 
+  @keyframes pulse {
+    0% {
+        opacity: 0.3;
+        font-size: 10vh;
+    }
+    100%{
+        opacity: 1;
+        font-size: 10vh;
+    }
+  }
+.open{
+ background-color: var(--basic);  
+ height: 100vh;
+ text-align: center;
+ #open-icon{
+   animation: pulse 3s infinite;
+   color: var(--basicNegative);
+   font-size: 10vh;
+   margin-top: 45vh;
+ }
+}

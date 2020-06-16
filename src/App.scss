@@ -1,0 +1,57 @@
+
+.darkApp{
+--basic:black;
+--basicNegative:white;
+ --background-elements: rgb(37, 37, 37);
+ --background-design:rgb(47, 93, 77);
+ --orenge:rgb(255, 185, 93);
+ --green:rgb(125, 255, 106);
+ --blue:rgb(108, 127, 255);
+ --red:rgb(255, 101, 101);
+
+ padding:4vh 10% 4vh;
+ background-color: var(--basic);
+ color: var(--basicNegative);
+ height: 100vh;
+
+hr{
+    border-top: 0px solid var(--basicNegative);
+}
+i{
+    color:var(--basicNegative);
+}
+}
+
+
+ .lightApp{
+--basic:white;
+--basicNegative:black;
+ --background-elements:rgb(235, 235, 235);
+ --background-elements: rgb(223, 223, 223);
+ --background-design:rgb(135, 248, 209);
+ --orenge:rgb(255, 185, 93);
+ --green:rgb(125, 255, 106);
+ --blue:rgb(108, 127, 255);
+ --red:rgb(255, 101, 101);
+
+
+ padding:4vh 10% 4vh;
+ background-color: var(--basic);
+ color: var(--basicNegative);
+hr{
+    border-top: 0px solid var(--basicNegative);
+} 
+i{
+    color:var(--basicNegative);
+}
+ }
+
+ @media only screen and (max-width: 768px) {
+        .darkApp{
+          padding: 4vh 3%;
+        }
+        .lightApp{
+            padding: 4vh 3%;
+        }
+}
+
