@@ -25,7 +25,7 @@ class Menu extends Component {
          <hr/>
          
          
-         <div className="menu-actions" id="projects">
+         <div className="menu-actions" id="projects" onClick={()=>this.props.history.push("/projects")}>
          <i class="fa fa-tasks"></i><span>All my projects</span>
          </div>
          <hr/>

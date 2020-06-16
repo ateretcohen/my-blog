@@ -8,6 +8,7 @@ import Home from "./components/home-page/Home";
 import Panel from "./components/panel/Panel";
 import Menu from "./components/menu-page/Menu";
 import About from "./components/about-page/About";
+import Projects from "./components/projects-page/Projects";
 
 
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
           <Route exact path={"/"} component={Home} />
           <Route exact path={"/menu"} render={(props) => <Menu {...props} chengeDisplay={this.chengeDisplay} display={this.state.display}/>}/>
           <Route exact path={"/about"} component={About} />
+          <Route exact path={"/projects"} component={Projects} />
 
           </Switch>
           </Router>
