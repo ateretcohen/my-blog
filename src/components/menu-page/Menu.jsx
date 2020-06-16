@@ -18,6 +18,11 @@ class Menu extends Component {
   render() {
     return (
       <div className="menu">
+
+         <hr/>
+         <div className="menu-actions" id="home" onClick={()=>this.props.history.push("/")}>
+         <i style={{color:"var(--green)"}} class="fa fa-home"></i><span>Home</span>
+         </div>
          <hr/>
          <div className="menu-actions" id="about" onClick={()=>this.props.history.push("/about")}>
          <i style={{color:"var(--red"}} class="fa fa-address-card"></i><span>About me</span>

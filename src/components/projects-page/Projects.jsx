@@ -1,40 +1,36 @@
 import React, { Component } from "react";
 import './projects-style.scss'
 import AllProjects from "./AllProjects.jsx";
-import Data from './projects-data.json'
 
 class Projects extends Component {
  constructor(props) {
      super(props)
  
      this.state = {
-          projectsList:[]
+          projectsList:this.props.projectsList,
+          allProjects:true,
+          openProject:{Id:0,AppKind:""}
      }
  }
 
- componentDidMount() {
-    let projectsList=[];
-    Data.map(project=>{
-        projectsList.push({
-        AppKind:project.AppKind,
-        Id: project.Id,
-        Img:String(project.Img) ,
-        Link: project.Link,
-        Name: project.Name
-        })
-   })
-   this.setState({projectsList:projectsList})
-   
+ showProject=(Id,AppKind)=>{
+     const pro={Id:Id,AppKind:AppKind}
+     this.setState({openProject:pro})
+    //  this.setState({allProjects:false})
+     console.log(this.state.openProject);
+     
  }
  
   render() {
     return (
       <div className="projects">
+        
          {
+             this.state.allProjects?
              this.state.projectsList.map(project=>{
-                 return <AllProjects Id={project.Id} Name={project.Name} Img={project.Img} Link={project.Link} AppKind={project.AppKind}/>
-                 
+                 return <AllProjects showProject={this.showProject} Id={project.Id} Name={project.Name} Img={project.Img} Link={project.Link} AppKind={project.AppKind}/>
              })
+             :null
          }
          
       </div>

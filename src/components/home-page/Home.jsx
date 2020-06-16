@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './home-style.scss'
+import { Link } from "react-router-dom";
 
 class Home extends Component {
  constructor(props) {
@@ -28,6 +29,7 @@ class Home extends Component {
         <p>cafe cafe database</p>
          <img className="project-img" src={require("./cafe cafe.png")} alt="cafe cafe project"/>
       </div>
+      <Link className="view-more" to="/projects">view more...</Link>
       </div>
     );
   }
