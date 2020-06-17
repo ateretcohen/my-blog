@@ -13,26 +13,23 @@ class Projects extends Component {
      }
  }
 
- showProject=(Id,AppKind)=>{
-     const pro={Id:Id,AppKind:AppKind}
-     this.setState({openProject:pro})
-    //  this.setState({allProjects:false})
-     console.log(this.state.openProject);
-     
+ openProject=(Id,AppKind)=>{
+     this.props.openProject(Id)
+     AppKind==="mobail"?
+     this.props.history.push("/pMobil")
+     :
+     this.props.history.push("/pComputer")
+
  }
  
   render() {
     return (
       <div className="projects">
-        
          {
-             this.state.allProjects?
              this.state.projectsList.map(project=>{
-                 return <AllProjects showProject={this.showProject} Id={project.Id} Name={project.Name} Img={project.Img} Link={project.Link} AppKind={project.AppKind}/>
+                 return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} AppKind={project.AppKind}/>
              })
-             :null
-         }
-         
+         }        
       </div>
     );
   }

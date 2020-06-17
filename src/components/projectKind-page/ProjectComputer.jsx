@@ -14,7 +14,7 @@ class ProjectComputer extends Component {
   render() {
     return (
       <div className="projectKind">
-           
+            <p>{this.props.Id}</p> 
       </div>
     );
   }

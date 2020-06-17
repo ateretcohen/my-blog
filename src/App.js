@@ -10,14 +10,16 @@ import Menu from "./components/menu-page/Menu";
 import About from "./components/about-page/About";
 import Projects from "./components/projects-page/Projects";
 import Data from './projects-data.json'
-import ProjectKind from "./components/projectKind-page/ProjectKind";
+import ProjectComputer from "./components/projectKind-page/ProjectComputer";
+import ProjectMobail from "./components/projectKind-page/ProjectMobail";
 
 
 class App extends Component {
   state = {
     open:true,
     display:"darkApp",
-    projectsList:[]
+    projectsList:[],
+    openProject:0
   };
   componentDidMount() {
     setTimeout(() => {
@@ -43,6 +45,9 @@ class App extends Component {
     :
     this.setState({display:"lightApp"})
   }
+  openProject=(Id)=>{
+     this.setState({openProject:Id})
+  }
   render() {
     return (
       <div className={this.state.display}>
@@ -56,9 +61,9 @@ class App extends Component {
           <Route exact path={"/"} component={Home} />
           <Route exact path={"/menu"} render={(props) => <Menu {...props} chengeDisplay={this.chengeDisplay} display={this.state.display}/>}/>
           <Route exact path={"/about"} component={About} />
-          <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList}/>}/>
-          <Route exact path={"/projectsKind"} render={(props) => <ProjectKind {...props} />}/>
-
+          <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList} openProject={this.openProject}/>}/>
+          <Route exact path={"/pMobil"} render={(props) => <ProjectMobail {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]}/>}/>
+          <Route exact path={"/pComputer"} render={(props) => <ProjectComputer {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]}/>}/>
           </Switch>
           </Router>
         } 

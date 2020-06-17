@@ -13,7 +13,7 @@ class AllProjects extends Component {
  
   render() {
     return (
-      <div className="projects" onClick={()=>this.props.showProject(this.props.Id,this.props.AppKind)}>
+      <div className="projects" onClick={()=>this.props.openProject(this.props.Id,this.props.AppKind)}>
             <div className="project">
                 <p>{this.props.Name}</p>
                 <img className="project-img" src={require("./imgs/"+this.props.Img)} alt="notes project"/>

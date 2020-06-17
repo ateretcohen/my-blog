@@ -14,7 +14,8 @@ class ProjectMobail extends Component {
   render() {
     return (
       <div className="projectKind">
-           
+          <p>{this.props.object.Name}</p>
+          <p></p>
       </div>
     );
   }

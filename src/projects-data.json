@@ -1,20 +1,20 @@
 [
     {
-        "Id":"1",
+        "Id":0,
         "Name":"Sudoku",
         "Link":"https://github.com/ateretcohen/sudoku-game",
         "Img":"sudoku.jpg",
         "AppKind":"comuter"
     },
     {
-        "Id":"2",
+        "Id":1,
         "Name":"notes create",
         "Link":"https://github.com/ateretcohen/notes",
         "Img":"notes.png",
         "AppKind":"mobail"
     },
     {
-        "Id":"3",
+        "Id":2,
         "Name":"cafe cafe",
         "Link":"https://github.com/ateretcohen/Cafe-Caf-",
         "Img":"cafe cafe.png",
