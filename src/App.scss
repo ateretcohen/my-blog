@@ -12,7 +12,7 @@
  padding:4vh 10% 4vh;
  background-color: var(--basic);
  color: var(--basicNegative);
- height: 100vh;
+ height: 400vh;
 
 hr{
     border-top: 0px solid var(--basicNegative);
@@ -45,13 +45,36 @@ i{
     color:var(--basicNegative);
 }
  }
-
- @media only screen and (max-width: 768px) {
-        .darkApp{
-          padding: 4vh 3%;
-        }
-        .lightApp{
-            padding: 4vh 3%;
-        }
+.viewCode{
+    border-radius: 4px;
+    border: 0px;
+    background-color: var(--background-design);
+    opacity: 0.7;
+    color: var(--basicNegative);
+    padding: 1%;
+    margin: 5% 0%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    font-size: medium;
+}
+.viewCode:hover{
+ background-color: var(--background-elements);  
 }
 
+
+@media only screen and (max-width: 768px) {
+    .darkApp{
+      padding: 4vh 3%;
+    }
+    .lightApp{
+        padding: 4vh 3%;
+    }
+    .viewCode{
+        width: 30%;
+        padding: 3%;
+        margin: 10% 0%;
+       margin-left: 50%;
+       transform: translateX(-50%);
+    }
+}

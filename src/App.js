@@ -11,7 +11,6 @@ import About from "./components/about-page/About";
 import Projects from "./components/projects-page/Projects";
 import Data from './projects-data.json'
 import ProjectComputer from "./components/projectKind-page/ProjectComputer";
-import ProjectMobail from "./components/projectKind-page/ProjectMobail";
 
 
 class App extends Component {
@@ -34,7 +33,8 @@ class App extends Component {
         Id: project.Id,
         Img:String(project.Img) ,
         Link: project.Link,
-        Name: project.Name
+        Name: project.Name,
+        description:project.description
         })
    })
    this.setState({projectsList:projectsList})
@@ -58,11 +58,10 @@ class App extends Component {
           <Router basename="my-blog" history={history}>
           <Panel/>
           <Switch>
-          <Route exact path={"/"} component={Home} />
+          <Route exact path={"/"} render={(props) => <Home {...props} projectsList={this.state.projectsList} openProject={this.openProject}/>}/>
           <Route exact path={"/menu"} render={(props) => <Menu {...props} chengeDisplay={this.chengeDisplay} display={this.state.display}/>}/>
           <Route exact path={"/about"} component={About} />
           <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList} openProject={this.openProject}/>}/>
-          <Route exact path={"/pMobil"} render={(props) => <ProjectMobail {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]}/>}/>
           <Route exact path={"/pComputer"} render={(props) => <ProjectComputer {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]}/>}/>
           </Switch>
           </Router>

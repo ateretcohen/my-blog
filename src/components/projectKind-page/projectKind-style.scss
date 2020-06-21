@@ -1,3 +1,22 @@
-.projectKind{
-    
+.computer{
+   p{
+       text-align: center;
+       width: 80%;
+       margin: 3% 10% 2%;
+   } 
+   .title{
+       font-size: larger;
+       font-weight: bold;
+       margin-top: auto;
+   }
+   .project-img-computer{
+       border-radius: 4px;
+       width: 80%;
+       margin: 0% 10%;
+   }
+   .project-img-mobail{
+    border-radius: 4px;
+    width: 40%;
+    margin: 0% 30%;
+   }
 }

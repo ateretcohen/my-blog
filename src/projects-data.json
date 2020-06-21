@@ -1,23 +1,40 @@
 [
     {
         "Id":0,
-        "Name":"Sudoku",
+        "Name":"SUDOKU GAME",
         "Link":"https://github.com/ateretcohen/sudoku-game",
         "Img":"sudoku.jpg",
-        "AppKind":"comuter"
+        "AppKind":"comuter",
+        "description":[{"dis":"Combines algorithms with JavaScript and design with html css.The game random Sudoku board , according to difficulty level, gives clues to the gamer and performs board validation.","img":null},
+       {"dis":"Enter game: user Name-Ateret, Password-1234","img":"sudoku1.PNG"},
+       {"dis":"chooce play level: hard-full 40, normal- full 30, easy- full 20","img":"sudoku2.PNG"},
+       {"dis":"sudoku bord: help-marker yellow clicked button number(4), marker greey finish number(3).","img":"sudoku3.PNG"},
+       {"dis":"back-chooce new level, new- random new bord, clean- remuve player full numbers, check- board validation, exit-close game.","img":"sudoku4.PNG"}
+    ]
     },
     {
         "Id":1,
-        "Name":"notes create",
+        "Name":"NOTES CREATION",
         "Link":"https://github.com/ateretcohen/notes",
         "Img":"notes.png",
-        "AppKind":"mobail"
+        "AppKind":"mobail",
+        "description":[{"dis":"notes mobile app. all notes with note name and edit date, delete and edit note opption","img":"‏‏notes1.PNG"},
+        {"dis":"create new note, name note, add items, check/uncheck item opption.","img":"notes2.PNG"}]
     },
     {
         "Id":2,
-        "Name":"cafe cafe",
+        "Name":"CAFE CAFE",
         "Link":"https://github.com/ateretcohen/Cafe-Caf-",
         "Img":"cafe cafe.png",
-        "AppKind":"comuter"
+        "AppKind":"comuter",
+        "description":[]
+    },
+    {
+        "Id":3,
+        "Name":"MY BLOG",
+        "Link":"https://github.com/ateretcohen/blog",
+        "Img":"blog.jpg",
+        "AppKind":"comuter",
+        "description":[]
     }
 ]

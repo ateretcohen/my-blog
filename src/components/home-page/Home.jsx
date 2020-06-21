@@ -10,26 +10,29 @@ class Home extends Component {
           
      }
  }
- 
+ openProject=(Id)=>{
+  this.props.openProject(Id)
+  this.props.history.push("/pComputer")
+}
   render() {
     return (
       <div className="home">
       <p className="im">Wellcome to my blog! Thanks for joining.</p>
       <p className="im">I want to show you some of my personal projects</p>
 
-      <div className="projects">
-        <p>create notes</p>
-        <img className="project-img" src={require("./notes.png")} alt="notes project"/>
+      <div className="projects" onClick={()=>this.openProject(this.props.projectsList[0].Id)}>
+     <p>{this.props.projectsList[0].Name}</p>
+        <img className="project-img" src={require("./"+this.props.projectsList[0].Img)} alt="notes project"/>
       </div>
-      <div className="projects">
-        <p>sudoku game</p>
-         <img className="project-img" src={require("./sudoku.jpg")} alt="sudoku project"/>
+      <div className="projects" onClick={()=>this.openProject(this.props.projectsList[1].Id)}>
+        <p>{this.props.projectsList[1].Name}</p>
+         <img className="project-img" src={require("./"+this.props.projectsList[1].Img)} alt="sudoku project"/>
       </div>
-      <div className="projects">
-        <p>cafe cafe database</p>
-         <img className="project-img" src={require("./cafe cafe.png")} alt="cafe cafe project"/>
+      <div className="projects" onClick={()=>this.openProject(this.props.projectsList[2].Id)}>
+        <p>{this.props.projectsList[2].Name}</p>
+         <img className="project-img" src={require("./"+this.props.projectsList[2].Img)} alt="cafe cafe project"/>
       </div>
-      <Link className="view-more" to="/projects">view more...</Link>
+      <button className="viewCode" onClick={()=>this.props.history.push("/projects")}>view more</button>
       </div>
     );
   }

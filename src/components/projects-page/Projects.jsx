@@ -9,17 +9,13 @@ class Projects extends Component {
      this.state = {
           projectsList:this.props.projectsList,
           allProjects:true,
-          openProject:{Id:0,AppKind:""}
+          openProject:{Id:0}
      }
  }
 
- openProject=(Id,AppKind)=>{
+ openProject=(Id)=>{
      this.props.openProject(Id)
-     AppKind==="mobail"?
-     this.props.history.push("/pMobil")
-     :
      this.props.history.push("/pComputer")
-
  }
  
   render() {
@@ -27,7 +23,7 @@ class Projects extends Component {
       <div className="projects">
          {
              this.state.projectsList.map(project=>{
-                 return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} AppKind={project.AppKind}/>
+                 return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img}/>
              })
          }        
       </div>
