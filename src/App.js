@@ -50,7 +50,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div className={this.state.display}>
+      <div id="hebrow" className={this.state.display}>
         {
           this.state.open?
           <Open/>

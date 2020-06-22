@@ -10,25 +10,28 @@
     animation: animate 1.5s ease-in-out;
     background-color: var(--basic);
     .interviewer{
-        float: left;
-        max-width: 40%;
-        margin-right: 60%;
+        max-width: 35%;
+        margin-right: 65%;
         background-color: var(--background-elements);
-        margin-bottom: 3%;
+        margin-bottom: 2%;
     }
     .im{
-        float: right;
-        margin-left: 50%;
-        max-width: 50%;
-        display: block;
+        margin-left: 30%;
+        max-width: 70%;
         background-color:var(--background-design);
+
     }
-    p{
-        padding: 1%;
-        margin: 0.7%;
+    .im-s{
+      margin-left: 50%;
+      max-width: 50%;
+      background-color:var(--background-design);
+
+  }
+    p{  
+        margin-top: -2%;
+        padding: 1% 2%;
         text-align: left;
         border-radius: 6px;
-        // opacity: 0.9;
     }
     @media only screen and (max-width: 768px) {
      .im{
@@ -40,5 +43,10 @@
       max-width: 70%;
       margin-right: 30%;
   }
+  p{ 
+    padding: 1% 2%; 
+    margin-top: -5%;
+  }
 }
+
 }

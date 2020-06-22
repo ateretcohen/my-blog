@@ -13,16 +13,40 @@ class About extends Component {
   render() {
     return (
       <div className="about">
+        <br/><br/>
         {/* interviwer */}
          <p className="interviewer">Ateret, tell me little bit about your self</p><br/>
          {/* answer */}
-         <p className="im">I'm 22, live in Elad.</p><br/>
-         <p className="im">After high school, I started studying software engineering, I graduated in 2018.</p><br/>
-         <p className="im">In 2019, I started studying Developing full-stack</p><br/>
-         <p className="im">I'm fast-learner and I had good grades.</p><br/>
-         <p className="im">From the start I knew I want it, I like the way of thinking and challenge.</p><br/>
-         <p className="im">I think this world is amazing and big and I have a passion to know more and more.</p><br/>
-         <p className="im">Now I'm practical in website and app development in Hi-Teach company.</p>
+         <p className="im-s">My name is Ateret, I’m 22 years old, I’m the second in my family, live in Elad.</p><br/>
+         <p className="im">After high school I started to study program developer diploma,I graduated in 2018.
+          Additionally In 2019, I study full-stack developer diploma in SVcollege- Tel Aviv.</p><br/>
+         <p className="im"> My experience is from my personal projects during my study and
+          in March I started a work Practical in hi-teach company - I develop windows and iOS web app.</p><br/>
+
+
+         {/* interviwer */}
+         <p className="interviewer">tell me little bit about last experience</p><br/>
+
+         <p className="im-s">Developer website and app position.</p><br/>
+         <p className="im">development and algorithm building- using React.js, html, design -using bootstrap/css/scss, 
+          Database connection - using PostMan, local storage-using json.js.</p><br/>
+         <p className="im">that was great challenge!</p><br/>
+         <p className="im">that was my first experience in hi-tech company.
+         I learned new things and technologies, I liked the team working, they push me up.
+         my dream is to be good developer, and I got good feedback and appreciated my work.
+         </p><br/>
+
+         {/* interviwer */}
+         <p className="interviewer">What are your good qualities?</p><br/>
+
+         <p className="im">Highly motivated, fast-learner, technologically and logically oriented, creative, patient. Excellent in human relations skills, team player, industrious.</p><br/>
+        
+         <p className="interviewer">What are your hobbies?</p><br/>
+
+         <p className="im-s">A year ago, I started playing piano and that's my hobby.</p><br/>
+
+      
+      
       </div>
     );
   }

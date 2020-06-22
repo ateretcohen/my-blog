@@ -18,8 +18,8 @@
         "Link":"https://github.com/ateretcohen/notes",
         "Img":"notes.png",
         "AppKind":"mobail",
-        "description":[{"dis":"notes mobile app. all notes with note name and edit date, delete and edit note opption","img":"‏‏notes1.PNG"},
-        {"dis":"create new note, name note, add items, check/uncheck item opption.","img":"notes2.PNG"}]
+        "description":[{"dis":"notes mobile app. all notes with note name and edit date, delete and edit note options","img":"‏‏notes1.PNG"},
+        {"dis":"create new note, name note, add items, check/uncheck item options.","img":"notes2.PNG"}]
     },
     {
         "Id":2,
@@ -27,7 +27,12 @@
         "Link":"https://github.com/ateretcohen/Cafe-Caf-",
         "Img":"cafe cafe.png",
         "AppKind":"comuter",
-        "description":[]
+        "description":[{"dis":"a system for managing the company's database. Developed in Access. Add/delete data, searches and calculations (based on saved queries). Forms and order creation.","img":null},
+            {"dis":"open page- 3 buttons: data tabels, saved queries, forms. ","img":"‏‏cafe1.PNG"},
+            {"dis":"tabels: pay, custopers, workers, citys.","img":"‏‏cafe2.PNG"},
+            {"dis":"data options: add, delete, search, move back.","img":"‏‏cafe3.PNG"},
+            {"dis":"some examples for saved queries.","img":"‏‏cafe4.PNG"},
+            {"dis":"Forms and order creation.(menu, castomers list...)","img":"‏‏cafe5.PNG"}]
     },
     {
         "Id":3,
