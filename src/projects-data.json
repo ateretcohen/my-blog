@@ -2,6 +2,7 @@
     {
         "Id":0,
         "Name":"SUDOKU GAME",
+        "Tec":"JavaScript",
         "Link":"https://github.com/ateretcohen/sudoku-game",
         "Img":"sudoku.jpg",
         "AppKind":"comuter",
@@ -15,6 +16,7 @@
     {
         "Id":1,
         "Name":"NOTES CREATION",
+        "Tec":"React.Js",
         "Link":"https://github.com/ateretcohen/notes",
         "Img":"notes.png",
         "AppKind":"mobail",
@@ -24,6 +26,7 @@
     {
         "Id":2,
         "Name":"CAFE CAFE",
+        "Tec":"Acsses",
         "Link":"https://github.com/ateretcohen/Cafe-Caf-",
         "Img":"cafe cafe.png",
         "AppKind":"comuter",
@@ -37,9 +40,13 @@
     {
         "Id":3,
         "Name":"MY BLOG",
+        "Tec":"React.Js",
         "Link":"https://github.com/ateretcohen/blog",
         "Img":"blog.jpg",
         "AppKind":"comuter",
-        "description":[]
+        "description":[{"dis":"Combines algorithms with React.JS and design with html scss, database- using Json.JS.","img":null},
+            {"dis":"The purpose of developing my blog is to tell you about myself and my experience in a different way.","img":null},
+            {"dis":"options: about me- Interview simulation, projects- explain and view code in gitHub, cv- download cv to your computer, languge-switch hebrow or english display-switch display dark or light.","img":"‏‏blog.PNG"},
+            {"dis":"I hope you enjoy and I would love to receive feedbacks :)","img":null}]
     }
 ]

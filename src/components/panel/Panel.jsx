@@ -9,7 +9,7 @@ class Panel extends Component {
      super(props)
  
      this.state = {
-          
+
      }
  }
  
@@ -18,13 +18,29 @@ class Panel extends Component {
       <div className="panel">
           <hr/>
           <div className="inside-panel">
-          <i id="panel-icon-left" class="fa fa-chevron-left" 
-           onClick={ ()=>history.goBack() }></i>
+            {
+              this.props.lan==="hebrow"?
+              <i id="panel-icon-left" class="fa fa-chevron-right" 
+              onClick={ ()=>history.goBack() }></i>
+              :
+              <i id="panel-icon-left" class="fa fa-chevron-left" 
+              onClick={ ()=>history.goBack() }></i>
+            }
+         
            <img id="profil-pic" src={require("./pp.jpg")} alt="profil picture"/>
+           {
+             this.props.lan==="hebrow"?
+            <div id="profil-title">   
+                <span id="user-name">עטרת כהן</span><br/>
+                <span>full-stack מפתחת</span>
+           </div>
+           :
            <div id="profil-title">   
                 <span id="user-name">Ateret Cohen</span><br/>
                 <span>full-stack developer. </span>
            </div>
+           }
+           
           <Link to="/menu">
           <i id="panel-icon-right" class="fa fa-bars"></i>
           </Link> 

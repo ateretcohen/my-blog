@@ -14,24 +14,37 @@
         margin-right: 65%;
         background-color: var(--background-elements);
         margin-bottom: 2%;
+        #hebrow &{
+          margin-left: 65%;
+          margin-right: 0%;
+        }
     }
     .im{
         margin-left: 30%;
         max-width: 70%;
         background-color:var(--background-design);
-
+        #hebrow &{
+          margin-right: 3%;
+          margin-left: 0%;
+        }
     }
     .im-s{
       margin-left: 50%;
       max-width: 50%;
       background-color:var(--background-design);
-
+      #hebrow &{
+        margin-right: 50%;
+        margin-left: 0%;
+      }
   }
     p{  
         margin-top: -2%;
         padding: 1% 2%;
         text-align: left;
         border-radius: 6px;
+        #hebrow &{
+          text-align: right;
+        }
     }
     @media only screen and (max-width: 768px) {
      .im{

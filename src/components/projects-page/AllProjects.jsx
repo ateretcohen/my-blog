@@ -15,7 +15,8 @@ class AllProjects extends Component {
     return (
       <div className="projects" onClick={()=>this.props.openProject(this.props.Id)}>
             <div className="project">
-                <p>{this.props.Name}</p>
+                <p className="title">{this.props.Name}</p>
+                <p>{this.props.Tec}</p>
                 <img className="project-img" src={require("./imgs/"+this.props.Img)} alt="notes project"/>
             </div>
       </div>

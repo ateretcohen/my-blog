@@ -3,6 +3,13 @@
   height: 100vh;
     span{
         margin-left:1% ;
+        
+    }
+    .span-menu{
+      #hebrow &{
+          text-align: right;
+          margin-right: 3%;
+        }
     }
     .menu-actions{
       padding: 0.5% 0%;
@@ -10,6 +17,12 @@
     #down{
         float: right;
         margin-right: 1%;
+        #hebrow &{
+          float: left;
+          margin-right: 0%;
+          margin-left: 1%;
+          margin-top: -1.5%;
+        }
     }
     a:link {
         text-decoration: none;
@@ -28,12 +41,20 @@
           margin-bottom: 2%;
           p{
             padding: 0px 1%;  
+            #hebrow &{
+              padding: 0px 1% 0px 3%;
+              text-align: right;
+            }
           }
           .language-p:hover{
               color: var(--blue);
           }
           span{
             padding: 0px 1%; 
+            #hebrow &{
+              padding: 0px 0% 0px 1%;
+              text-align: right;
+            }
           }
           span:hover{
               color: var(--green);
@@ -41,5 +62,12 @@
           .Display-p:hover{
             color: var(--green);
           }
+      }
+      #icon-menu{
+        #hebrow &{
+          float: right;
+          padding-top: 0.4%;
+          box-sizing: border-box;
+        }
       }
 }

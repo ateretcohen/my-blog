@@ -6,12 +6,17 @@
          font-size: 4vh;
          float: left;
          padding: 0.7% 1% 0.7% 0px;
+         #hebrow &{
+             float: right;
+         }
      }
      #panel-icon-right{
         font-size: 4vh;
         float: right;
         padding: 0.7% 0px;
-
+        #hebrow &{
+            float: left;
+        }
      }
        
          #profil-pic{
@@ -19,12 +24,22 @@
          height: 7vh;
          border-radius: 50px;
          margin: 0px 1.5% 0px 3%;
+         #hebrow &{
+             float: right;
+             margin: 0px 3% 0px 1.5%;
+         }
          }
          #profil-title{
             float: left;
             margin-left: 0.1%;
             #user-name{
                 font-weight: bold;
+            }
+            #hebrow &{
+                float: right;
+                margin-left: 0%;
+                margin-right: 0.1%;
+               text-align: right;
             }
         }    
     } 
@@ -40,6 +55,9 @@
             height: 7vh;
             #panel-icon-left{
              padding: 2.5% 1% 0.7% 0px;
+             #hebrow &{
+                padding: 2.5% 0% 0.7% 1%;
+             }
          }
          #panel-icon-right{
             padding: 2.5% 0px;

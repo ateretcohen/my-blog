@@ -23,9 +23,10 @@ class Projects extends Component {
       <div className="projects">
          {
              this.state.projectsList.map(project=>{
-                 return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img}/>
+                 return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} Tec={project.Tec}/>
              })
-         }        
+         }  
+         <button className="viewCode" onClick={()=>window.open("https://github.com/ateretcohen/")}>view all</button>      
       </div>
     );
   }

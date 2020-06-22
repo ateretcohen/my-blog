@@ -15,6 +15,12 @@
         max-width: 50%;
         display: block;
         background-color:var(--background-design);
+        #hebrow &{
+           float: left;
+           margin-right: 50%;
+           margin-left: 0%;
+           text-align: right;
+        }
     }
     p{
         padding: 1%;
@@ -27,7 +33,7 @@
         float: right;
         margin: 5% 3% 0% 3%;
         width: 300px;
-        height: 300px;
+        height: 350px;
         // display: inline-block;
         border-radius: 6px;
         border: 1px solid var(--background-design);
@@ -36,9 +42,11 @@
         padding-top: 2% ;
         p{
             text-align: center;
+        }    
+        .title{
             font-weight: bold;
             font-size: large;
-        }    
+        }
     }
     .projects:hover{
         background-color: var(--background-elements);

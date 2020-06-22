@@ -18,18 +18,24 @@ class Home extends Component {
     return (
       <div className="home">
       <p className="im">Wellcome to my blog! Thanks for joining.</p>
-      <p className="im">I want to show you some of my personal projects</p>
+      <p className="im">The purpose of my blog is to tell you about myself and my experience in a different way.</p>
+
+      <p className="im">I want to show you some of my personal projects:
+      </p>
 
       <div className="projects" onClick={()=>this.openProject(this.props.projectsList[0].Id)}>
-     <p>{this.props.projectsList[0].Name}</p>
+      <p className="title">{this.props.projectsList[0].Name}</p>
+      <p>{this.props.projectsList[0].Tec}</p>
         <img className="project-img" src={require("./"+this.props.projectsList[0].Img)} alt="notes project"/>
       </div>
       <div className="projects" onClick={()=>this.openProject(this.props.projectsList[1].Id)}>
         <p>{this.props.projectsList[1].Name}</p>
+        <p>{this.props.projectsList[1].Tec}</p>
          <img className="project-img" src={require("./"+this.props.projectsList[1].Img)} alt="sudoku project"/>
       </div>
       <div className="projects" onClick={()=>this.openProject(this.props.projectsList[2].Id)}>
         <p>{this.props.projectsList[2].Name}</p>
+        <p>{this.props.projectsList[2].Tec}</p>
          <img className="project-img" src={require("./"+this.props.projectsList[2].Img)} alt="cafe cafe project"/>
       </div>
       <button className="viewCode" onClick={()=>this.props.history.push("/projects")}>view more</button>

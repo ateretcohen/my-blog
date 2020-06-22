@@ -3,17 +3,20 @@
         float: right;
         margin: 5% 3% 0% 3%;
         width: 300px;
-        height: 300px;
+        height: 350px;
         border-radius: 6px;
         border: 1px solid var(--background-design);
-        padding: 1%;
+        padding: 0.5%;
         box-sizing: initial;
         padding-top: 2% ;
         p{
             text-align: center;
+           
+        }    
+        .title{
             font-weight: bold;
             font-size: large;
-        }    
+           }
     }
     .project:hover{
         background-color: var(--background-elements);
