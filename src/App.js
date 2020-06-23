@@ -19,7 +19,7 @@ class App extends Component {
     display:"darkApp",
     projectsList:[],
     openProject:0,
-    lan:"hebrow"
+    lan:"english"
   };
   componentDidMount() {
     setTimeout(() => {
@@ -51,7 +51,7 @@ class App extends Component {
      this.setState({openProject:Id})
   }
   chengeLan=(lan)=>{
-    lan==="hebrow"?
+    lan===""?
     this.setState({lan:"hebrow"})
     :
     this.setState({lan:"english"})
