@@ -51,7 +51,7 @@ class App extends Component {
      this.setState({openProject:Id})
   }
   chengeLan=(lan)=>{
-    lan===""?
+    lan==="hebrow"?
     this.setState({lan:"hebrow"})
     :
     this.setState({lan:"english"})
@@ -66,11 +66,11 @@ class App extends Component {
           <Router basename="my-blog" history={history}>
           <Panel lan={this.state.lan}/>
           <Switch>
-          <Route exact path={"/"} render={(props) => <Home {...props} projectsList={this.state.projectsList} openProject={this.openProject}/>}/>
+          <Route exact path={"/"} render={(props) => <Home {...props} projectsList={this.state.projectsList} openProject={this.openProject} lan={this.state.lan}/>}/>
           <Route exact path={"/menu"} render={(props) => <Menu {...props} chengeDisplay={this.chengeDisplay} display={this.state.display} lan={this.state.lan} chengeLan={this.chengeLan}/>}/>
-          <Route exact path={"/about"} component={About} />
-          <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList} openProject={this.openProject}/>}/>
-          <Route exact path={"/pComputer"} render={(props) => <ProjectComputer {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]}/>}/>
+          <Route exact path={"/about"} render={(props) =><About lan={this.state.lan}/> } />
+          <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList} openProject={this.openProject} lan={this.state.lan}/>}/>
+          <Route exact path={"/pComputer"} render={(props) => <ProjectComputer {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]} lan={this.state.lan}/>}/>
           </Switch>
           </Router>
         } 

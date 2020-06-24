@@ -43,8 +43,39 @@
             }
         }    
     } 
-
+   
+    #big-img{
+        position: fixed;
+        height: 40%;
+         width: 40%;
+         margin-left: 50%;
+         transform: translateX(-70%);
+         top:20%;
+          img{
+          border-radius: 5px;
+       }
+        #close{
+        position: fixed;
+         font-size: 2vh; 
+         z-index: 1;
+         padding: 3%;
+         color: var(--basicNegative);
+        }
+    }
     @media only screen and (max-width: 768px) {
+        #big-img{
+            margin-left: 50%;
+            transform: translateX(-90%);
+            top:20%;
+            img{
+                width: 350px;
+                height: auto;
+
+            }
+            #close{
+                padding: 7%;
+            }
+        }
         #profil-pic{
            height: 4vh;
         }

@@ -9,13 +9,21 @@ class Panel extends Component {
      super(props)
  
      this.state = {
-
+      profil:false
      }
  }
  
   render() {
     return (
       <div className="panel">
+        {
+          this.state.profil?
+          <div id="big-img">
+            <i id="close" class="fa fa-times" onClick={()=>this.setState({profil:false})}></i>
+           <img id="profil-pic" src={require("./pp.jpg")} alt="profil picture"/>
+          </div>
+          :null
+        }
           <hr/>
           <div className="inside-panel">
             {
@@ -27,7 +35,7 @@ class Panel extends Component {
               onClick={ ()=>history.goBack() }></i>
             }
          
-           <img id="profil-pic" src={require("./pp.jpg")} alt="profil picture"/>
+           <img id="profil-pic" src={require("./pp.jpg")} alt="profil picture" onClick={()=>this.setState({profil:true})}/>
            {
              this.props.lan==="hebrow"?
             <div id="profil-title">   
