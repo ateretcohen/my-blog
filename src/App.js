@@ -19,7 +19,7 @@ class App extends Component {
     display:"darkApp",
     projectsList:[],
     openProject:0,
-    lan:"english"
+    lan:"hebrow"
   };
   componentDidMount() {
     setTimeout(() => {
