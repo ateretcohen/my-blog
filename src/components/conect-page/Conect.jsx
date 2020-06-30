@@ -19,7 +19,6 @@ class Conect extends Component {
           <i id="icon" style={{backgroundColor:"var(--red)"}} class="fa fa-at"></i>
           <i id="icon" style={{backgroundColor:"var(--blue)"}} class="fa fa-linkedin"></i>
           <i id="icon" style={{backgroundColor:"var(--pink)"}} class="fa fa-github"></i>
-          
       </div>
     );
   }

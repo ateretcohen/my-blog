@@ -70,4 +70,19 @@
           box-sizing: border-box;
         }
       }
+      @media only screen and (max-width: 768px) {
+        .span-menu{
+          #hebrow &{
+              text-align: right;
+              margin-right: 10%;
+            }
+        }
+        #down{
+          #hebrow &{
+            margin-right: 0%;
+            margin-left: 1%;
+            margin-top: -4.5%;
+          }
+      }
+      }
 }
