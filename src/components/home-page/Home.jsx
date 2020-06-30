@@ -35,7 +35,7 @@ class Home extends Component {
           </div>
       }
       
-      <button className="viewCode" onClick={()=>this.props.history.push("/projects")}>{ this.props.lan==="hebrow"?"עוד פרויקטים":"view more"}</button>
+      <button className="viewCode" onClick={()=>this.props.history.push("/tecnologies")}>{ this.props.lan==="hebrow"?"עוד טכנולוגיות":"view more"}</button>
       
      {/* projects */}
      {
@@ -46,7 +46,7 @@ class Home extends Component {
      }
      {
        projects.map(project=>{
-         return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} Tec={project.Tec}/>
+         return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} Tec={project.Tec} Link={project.Link} lan={this.props.lan}/>
        })
      }
       <button className="viewCode" onClick={()=>this.props.history.push("/projects")}>{ this.props.lan==="hebrow"?"עוד פרויקטים":"view more"}</button>

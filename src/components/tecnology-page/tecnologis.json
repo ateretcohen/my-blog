@@ -1,0 +1,38 @@
+[
+    {
+        "tec":"React.Js",
+        "exp":"work: Hi-Teach company- Development web app for our ccompany and privet coustomers- using React.js. projects:notes, smart house and my blog.",
+        "img":"react.png"
+    },
+    {
+        "tec":"JavaScript",
+        "exp":"projects:sudoku game and calculator",
+        "img":"JavaScript.png"
+    },
+    {
+        "tec":"C",
+        "exp":"study:External test",
+        "img":"c.png"
+    },
+    {
+        "tec":"C#",
+        "exp":"projects: kitchen website",
+        "img":"c#.png"
+    },
+    {
+        "tec":"PostMan",
+        "exp":"work:Database connection for storing and retrieving information- using PostMan",
+        "img":"postMan.png"
+    },
+    {
+        "tec":"Json.JS",
+        "exp":"work:Database connection for storing and retrieving information local storage-using json.js. projects:my blog.",
+        "img":"json.png"
+    },
+    {
+        "tec":"SQL",
+        "exp":"study:Deep learning and concluding tests, projects:kitchen website",
+        "img":"sql.PNG"
+    }
+
+]

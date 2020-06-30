@@ -12,6 +12,7 @@ import Projects from "./components/projects-page/Projects";
 import Data from './projects-data.json'
 import ProjectComputer from "./components/projectKind-page/ProjectComputer";
 import Conect from "./components/conect-page/Conect";
+import Tec from "./components/tecnology-page/Tec";
 
 
 class App extends Component {
@@ -72,6 +73,7 @@ class App extends Component {
           <Route exact path={"/about"} render={(props) =><About lan={this.state.lan}/> } />
           <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList} openProject={this.openProject} lan={this.state.lan}/>}/>
           <Route exact path={"/pComputer"} render={(props) => <ProjectComputer {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]} lan={this.state.lan}/>}/>
+          <Route exact path={"/tecnologies"} render={(props) => <Tec {...props}/>}/>
           </Switch>
           <Conect/>
           </Router>

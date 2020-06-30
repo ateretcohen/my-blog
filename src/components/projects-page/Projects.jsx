@@ -23,7 +23,7 @@ class Projects extends Component {
       <div className="projects">
          {
              this.state.projectsList.map((project,i)=>{
-                 return <AllProjects key={i} openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} Tec={project.Tec}/>
+                 return <AllProjects key={i} openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} Tec={project.Tec} Link={project.Link} lan={this.props.lan}/>
              })
          }  
          <button className="viewCode" onClick={()=>window.open("https://github.com/ateretcohen/")}>{this.props.lan==="hebrow"?"כל הפרויקטים":"view all"}</button>      

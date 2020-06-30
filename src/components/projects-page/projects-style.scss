@@ -29,6 +29,22 @@
         transform: translateX(-50%);
         margin-top: 5%;
     }
+    .viewCode-p{
+        width: 70%;
+        padding: 3%;
+        font-size: large;
+        background-color: var(--background-design);
+        border-radius: 4px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5%;
+        opacity: 0.7;
+        color: var(--basicNegative);
+        border: 0px;
+    }
+    .viewCode-p:hover{
+        width: 72%; 
+    }
     @media only screen and (max-width: 768px) {
         .im{
          margin-left: 30%;
