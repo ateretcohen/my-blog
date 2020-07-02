@@ -6,7 +6,6 @@
       opacity: 1;
     }
   }
-
 .home{
     animation: animate 1.5s ease-in-out;
     #icon{
@@ -67,16 +66,33 @@
         margin-right: 44%;
         margin-top: 5%;
     }
+    .tec-img{
+        width: 85px;
+        height: 85px;
+        border-radius: 6px;
+        margin-left: 1%;
+        margin-top: 2%;
+        border: 2px solid var(--background-design);
+    }
+    #tec-div{
+        width: 100%;
+        align-items: center;
+        display: inline-block;
+    }
     @media only screen and (max-width: 768px) {
         .im{
-       margin-left: 30%;
-        max-width: 70%;
-        padding: 3%;
+            margin-left: 30%;
+            max-width: 70%;
+            padding: 3%;
+            width: 75%;
+        }
+        #first-im{
+            width: 60%;
         }
         .projects{
         width: 80%;
         height: 280px;
-        margin: 3% 12%;
+         margin: 3% 12%;
         }
    }
 }

@@ -17,7 +17,17 @@
     {
         "tec":"C#",
         "exp":"projects: kitchen website",
-        "img":"c#.png"
+        "img":"cSarp.png"
+    },
+    {
+        "tec":"Java",
+        "exp":"learn:Deep learning and concluding tests. projects: final project",
+        "img":"java.jpg"
+    },
+    {
+        "tec":"Angular",
+        "exp":"learn:Deep learning and concluding tests. projects: final project",
+        "img":"angular.png"
     },
     {
         "tec":"PostMan",
@@ -32,7 +42,23 @@
     {
         "tec":"SQL",
         "exp":"study:Deep learning and concluding tests, projects:kitchen website",
-        "img":"sql.PNG"
+        "img":"‏‏sql.PNG"
+    },
+    {
+        "tec":"Access",
+        "exp":"study:Deep learning and concluding tests, projects:cafe-cafe database",
+        "img":"access.jpg"
+    },
+    {
+        "tec":"Html",
+        "exp":"work:windows and iOS web- bulid and design client side. projects:my blog, kitcken website, sudoku...",
+        "img":"html.PNG"
+    },
+    {
+        "tec":"css",
+        "exp":"work:windows and iOS web- design client side. projects:my blog, kitcken website, sudoku...",
+        "img":"css.png"
     }
+
 
 ]

@@ -13,6 +13,7 @@ import Data from './projects-data.json'
 import ProjectComputer from "./components/projectKind-page/ProjectComputer";
 import Conect from "./components/conect-page/Conect";
 import Tec from "./components/tecnology-page/Tec";
+import TecData from "./components/tecnology-page/tecnologis.json"
 
 
 class App extends Component {
@@ -21,7 +22,8 @@ class App extends Component {
     display:"darkApp",
     projectsList:[],
     openProject:0,
-    lan:"hebrow"
+    lan:"hebrow",
+    TecList:[]
   };
   componentDidMount() {
     setTimeout(() => {
@@ -42,6 +44,16 @@ class App extends Component {
         })
    })
    this.setState({projectsList:projectsList})
+
+   let TecList=[];
+   TecData.map(tec=>{
+    TecList.push({
+       Tec:tec.tec,
+       Exp:tec.exp,
+       Img:tec.img
+     })
+   })
+   this.setState({TecList:TecList})   
   }
   chengeDisplay=(display)=>{
     display==="Dark"?
@@ -68,7 +80,7 @@ class App extends Component {
           <Router basename="my-blog" history={history}>
           <Panel lan={this.state.lan}/>
           <Switch>
-          <Route exact path={"/"} render={(props) => <Home {...props} projectsList={this.state.projectsList} openProject={this.openProject} lan={this.state.lan}/>}/>
+          <Route exact path={"/"} render={(props) => <Home {...props} projectsList={this.state.projectsList} openProject={this.openProject} lan={this.state.lan} TecList={this.state.TecList}/>}/>
           <Route exact path={"/menu"} render={(props) => <Menu {...props} chengeDisplay={this.chengeDisplay} display={this.state.display} lan={this.state.lan} chengeLan={this.chengeLan}/>}/>
           <Route exact path={"/about"} render={(props) =><About lan={this.state.lan}/> } />
           <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList} openProject={this.openProject} lan={this.state.lan}/>}/>

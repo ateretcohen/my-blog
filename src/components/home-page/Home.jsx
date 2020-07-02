@@ -23,20 +23,29 @@ class Home extends Component {
         {
           this.props.lan==="hebrow"?
           <div>
-              <p className="im">(: ברוכים הבאים לבלוג שלי! תודה שהצטרפת</p>
+              <p className="im" id="first-im">(: ברוכים הבאים לבלוג שלי! תודה שהצטרפת</p>
               <p className="im">.המטרה של הבלוג שלי היא להציג את עצמי והנסיון שלי בצורה קצת שונה</p>
               <p className="im">Json.JS זיכרון מקומי בקובץ Html, scss עיצוב React.JS את האתר בניתי בטכנולוגית</p>
+              <p className="im">:ידע ונסיון בטכנולוגיות</p>
           </div>
           :
           <div>
-             <p className="im">Wellcome to my blog! Thanks for joining.</p>
+             <p className="im"  id="first-im">Wellcome to my blog! Thanks for joining.</p>
              <p className="im">The purpose of my blog is to tell you about myself and my experience in a different way.</p>
              <p className="im">Combines algorithms with React.JS and design with html scss, local database- using Json.JS.</p>
+             <p className="im">Knowledge and experience in technologies:</p>
           </div>
       }
-      
-      <button className="viewCode" onClick={()=>this.props.history.push("/tecnologies")}>{ this.props.lan==="hebrow"?"עוד טכנולוגיות":"view more"}</button>
-      
+      <div id="tec-div">
+         {
+        this.props.TecList.map(tec=>{
+              return  <img className="tec-img" src={require("../tecnology-page/imgs/"+tec.Img)} alt="tecnologis"/>         
+        })
+      }
+      </div>
+     
+      <button className="viewCode" onClick={()=>this.props.history.push("/tecnologies")}>{ this.props.lan==="hebrow"?"פרוט טכנולוגיות":"more information"}</button>
+
      {/* projects */}
      {
           this.props.lan==="hebrow"?
