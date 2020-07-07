@@ -22,7 +22,7 @@ class App extends Component {
     display:"darkApp",
     projectsList:[],
     openProject:0,
-    lan:"hebrow",
+    lan:"English",
     TecList:[]
   };
   componentDidMount() {
@@ -85,9 +85,9 @@ class App extends Component {
           <Route exact path={"/about"} render={(props) =><About lan={this.state.lan}/> } />
           <Route exact path={"/projects"} render={(props) => <Projects {...props} projectsList={this.state.projectsList} openProject={this.openProject} lan={this.state.lan}/>}/>
           <Route exact path={"/pComputer"} render={(props) => <ProjectComputer {...props} Id={this.state.openProject} object={this.state.projectsList[this.state.openProject]} lan={this.state.lan}/>}/>
-          <Route exact path={"/tecnologies"} render={(props) => <Tec {...props}/>}/>
+          <Route exact path={"/tecnologies"} render={(props) => <Tec {...props} TecList={this.state.TecList}/>}/>
           </Switch>
-          <Conect/>
+          {/* <Conect/> */}
           </Router>
         } 
       </div>

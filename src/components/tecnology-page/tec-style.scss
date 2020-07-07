@@ -1,3 +1,25 @@
 .tec{
+    padding-left: 4%;
+    .all-tec{
+        display:inline-table;
+        margin: 3% 3% 0% 3%;
+        width: 300px;
+        height: 350px;
+        border-radius: 6px;
+        border: 1px solid var(--background-design);
+        text-align: center;
+        padding: 2%;
+        box-sizing: border-box;
+        .tec-img{
+            width: 80px;
+            height: 80px;
+            border-radius: 6px;
+            margin-left: 1%;
+            margin-top: 2%;
+        }
+    }
+    .all-tec:hover{
+        background-color: var(--background-elements);
+    }
     
 }

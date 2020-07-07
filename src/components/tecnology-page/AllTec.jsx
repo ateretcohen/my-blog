@@ -12,8 +12,12 @@ class AllTec extends Component {
  
   render() {
     return (
-      <div className="tec">
-
+      <div className="all-tec">
+          
+          <img className="tec-img" src={require("./imgs/"+this.props.Img)} alt="tecnologis"/>
+          <p><b>{this.props.Tec}</b></p>
+          <p>experience:</p>
+          <p>{this.props.Exp}</p>
       </div>
     );
   }

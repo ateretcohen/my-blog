@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './tec-style.scss'
+import AllTec from "./AllTec";
 
 
 class Tec extends Component {
@@ -13,7 +14,11 @@ class Tec extends Component {
   render() {
     return (
       <div className="tec">
-
+           {
+             this.props.TecList.map(tec=>{
+             return <AllTec Tec={tec.Tec} Exp={tec.Exp} Img={tec.Img}/>
+             })
+           }
       </div>
     );
   }

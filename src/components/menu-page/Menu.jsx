@@ -55,6 +55,18 @@ class Menu extends Component {
          </div>
          <hr/>
 
+         <div className="menu-actions" id="projects" onClick={()=>this.props.history.push("/tecnologies")}>
+         <i id="icon-menu" style={{color:"var(--pink)"}} class="fa fa-codepen"></i>
+         {
+            this.props.lan==="hebrow"?
+            <div className="span-menu"><span>ידע טכנולוגי</span></div>
+            :
+            <span>technologies</span>
+         }
+         
+         </div>
+         <hr/>
+
          <div className="menu-actions" id="Download" onClick={()=>this.setState({download:!this.state.download})}>
          <i id="icon-menu" style={{color:"var(--orenge)"}} class="fa fa-download"></i>
          {
