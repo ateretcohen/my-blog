@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './home-style.scss'
 import { Link } from "react-router-dom";
 import AllProjects from "../projects-page/AllProjects";
+import Conect from "../conect-page/Conect";
 
 class Home extends Component {
  constructor(props) {
@@ -17,7 +18,6 @@ class Home extends Component {
 }
   render() {
     let projects=this.props.projectsList.filter((project,i)=>(i<3))
-    console.log(projects);
     return (
       <div className="home">
         {
@@ -38,13 +38,13 @@ class Home extends Component {
       }
       <div id="tec-div">
          {
-        this.props.TecList.map(tec=>{
-              return  <img className="tec-img" src={require("../tecnology-page/imgs/"+tec.Img)} alt="tecnologis"/>         
+        this.props.TecList.map((tec,i)=>{
+              return  <img key={i} className="tec-img" src={require("../tecnology-page/imgs/"+tec.Img)} alt="tecnologis"/>         
         })
       }
       </div>
      
-      <button className="viewCode" onClick={()=>this.props.history.push("/tecnologies")}>{ this.props.lan==="hebrow"?"פרוט טכנולוגיות":"more information"}</button>
+      <button className="viewCode" onClick={()=>this.props.history.push("/tecnologies")}>{ this.props.lan==="hebrow"?"ניסיון מעשי":"Experience"}</button>
 
      {/* projects */}
      {
@@ -54,11 +54,15 @@ class Home extends Component {
           <p className="im">I want to show you some of my personal projects:</p>
      }
      {
-       projects.map(project=>{
-         return <AllProjects openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} Tec={project.Tec} Link={project.Link} lan={this.props.lan}/>
+       projects.map((project,i)=>{
+         return <AllProjects key={i}openProject={this.openProject} Id={project.Id} Name={project.Name} Img={project.Img} Tec={project.Tec} Link={project.Link} lan={this.props.lan}/>
        })
      }
       <button className="viewCode" onClick={()=>this.props.history.push("/projects")}>{ this.props.lan==="hebrow"?"עוד פרויקטים":"view more"}</button>
+      <br/>
+      {
+        <Conect/>
+      }
       </div>
     );
   }

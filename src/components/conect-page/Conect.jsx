@@ -19,7 +19,6 @@ class Conect extends Component {
          <div> <i id="icon" style={{color:"var(--red)"}} class="fa fa-at"></i><span>ateret1998@gmail.com</span></div>
          <div> <i id="icon" style={{color:"var(--blue)"}} class="fa fa-linkedin"></i><span onClick={()=>window.open("https://www.linkedin.com/in/ateret-hodaya-cohen/")}>https://www.linkedin.com/in/ateret-hodaya-cohen/</span></div>
          <div> <i id="icon" style={{color:"var(--pink)"}} class="fa fa-github"></i><span onClick={()=>window.open("https://github.com/ateretcohen/")}>https://github.com/ateretcohen/</span></div>
-     <br/>
       </div>
     );
   }
