@@ -21,5 +21,9 @@
     .all-tec:hover{
         background-color: var(--background-elements);
     }
-    
+    @media only screen and (max-width: 768px) {
+      .all-tec{ 
+          height: 100px;
+      }
+    }
 }
