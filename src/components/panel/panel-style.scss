@@ -1,5 +1,11 @@
 .panel{
     padding:4vh 0% 4vh;
+    position: fixed;
+    top: 0%;
+    width: 80%;
+    z-index: 2;
+    background-color: var(--basic);
+    height: 10vh;
     .inside-panel{
         height: 7vh;
         #panel-icon-left{
@@ -64,17 +70,23 @@
         }
     }
     @media only screen and (max-width: 768px) {
+        position: static;
+        width: 100%;
         #big-img{
-            margin-left: 50%;
-            transform: translateX(-90%);
-            top:20%;
+           background-color: var(--basic);
+           height: 100vh;
+           width: 150%;
             img{
-                width: 350px;
+                margin-left: 50%;
+                transform: translateX(-10%);
+                width: 50%;
                 height: auto;
+                margin-top: 10%;
 
             }
             #close{
                 padding: 7%;
+                text-align: center;
             }
         }
         #profil-pic{

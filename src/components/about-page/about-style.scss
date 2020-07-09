@@ -7,6 +7,7 @@
     }
   }
 .about{
+    margin-top: 15vh;
     animation: animate 1.5s ease-in-out;
     background-color: var(--basic);
     .interviewer{
@@ -47,6 +48,7 @@
         }
     }
     @media only screen and (max-width: 768px) {
+      margin-top: 0vh;
      .im{
       margin-left: 30%;
       max-width: 70%;

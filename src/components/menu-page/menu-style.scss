@@ -1,6 +1,7 @@
 
 .menu{
-  height: 100vh;
+  height: 77vh;
+  margin-top: 15vh;
     span{
         margin-left:1% ;
         
@@ -71,6 +72,7 @@
         }
       }
       @media only screen and (max-width: 768px) {
+        margin-top: 0vh;
         .span-menu{
           #hebrow &{
               text-align: right;

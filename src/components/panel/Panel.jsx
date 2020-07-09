@@ -35,7 +35,7 @@ class Panel extends Component {
               onClick={ ()=>history.goBack() }></i>
             }
          
-           <img id="profil-pic" src={require("./pp.jpg")} alt="profil picture" onClick={()=>this.setState({profil:true})}/>
+           <img id="profil-pic" src={require("./pp.jpg")} alt="profil picture" onClick={()=>this.setState({profil:!this.state.profil})}/>
            {
              this.props.lan==="hebrow"?
             <div id="profil-title">   

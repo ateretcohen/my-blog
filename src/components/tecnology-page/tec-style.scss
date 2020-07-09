@@ -1,5 +1,6 @@
 .tec{
     padding-left: 4%;
+    margin-top: 15vh;
     .all-tec{
         display:inline-table;
         margin: 3% 3% 0% 3%;
@@ -22,6 +23,7 @@
         background-color: var(--background-elements);
     }
     @media only screen and (max-width: 768px) {
+        margin-top: 0vh;
       .all-tec{ 
           height: 100px;
       }
