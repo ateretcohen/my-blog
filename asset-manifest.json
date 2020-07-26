@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/my-blog/static/css/main.bde30415.chunk.css",
-    "main.js": "/my-blog/static/js/main.eea80e9e.chunk.js",
-    "main.js.map": "/my-blog/static/js/main.eea80e9e.chunk.js.map",
+    "main.css": "/my-blog/static/css/main.519ca0ca.chunk.css",
+    "main.js": "/my-blog/static/js/main.5a1c003c.chunk.js",
+    "main.js.map": "/my-blog/static/js/main.5a1c003c.chunk.js.map",
     "runtime-main.js": "/my-blog/static/js/runtime-main.1501f8e3.js",
     "runtime-main.js.map": "/my-blog/static/js/runtime-main.1501f8e3.js.map",
     "static/css/2.4e5a3202.chunk.css": "/my-blog/static/css/2.4e5a3202.chunk.css",
-    "static/js/2.eebf85e5.chunk.js": "/my-blog/static/js/2.eebf85e5.chunk.js",
-    "static/js/2.eebf85e5.chunk.js.map": "/my-blog/static/js/2.eebf85e5.chunk.js.map",
+    "static/js/2.2a8c2636.chunk.js": "/my-blog/static/js/2.2a8c2636.chunk.js",
+    "static/js/2.2a8c2636.chunk.js.map": "/my-blog/static/js/2.2a8c2636.chunk.js.map",
     "index.html": "/my-blog/index.html",
-    "precache-manifest.3f5794076a192e1a513395062736b593.js": "/my-blog/precache-manifest.3f5794076a192e1a513395062736b593.js",
+    "precache-manifest.1e1aed03ee4587505df67aa3d2330c60.js": "/my-blog/precache-manifest.1e1aed03ee4587505df67aa3d2330c60.js",
     "service-worker.js": "/my-blog/service-worker.js",
     "static/css/2.4e5a3202.chunk.css.map": "/my-blog/static/css/2.4e5a3202.chunk.css.map",
-    "static/css/main.bde30415.chunk.css.map": "/my-blog/static/css/main.bde30415.chunk.css.map",
-    "static/js/2.eebf85e5.chunk.js.LICENSE.txt": "/my-blog/static/js/2.eebf85e5.chunk.js.LICENSE.txt",
+    "static/css/main.519ca0ca.chunk.css.map": "/my-blog/static/css/main.519ca0ca.chunk.css.map",
+    "static/js/2.2a8c2636.chunk.js.LICENSE.txt": "/my-blog/static/js/2.2a8c2636.chunk.js.LICENSE.txt",
     "static/media/ATERET COHEN CV.pdf": "/my-blog/static/media/ATERET COHEN CV.76a889e1.pdf",
     "static/media/JavaScript.png": "/my-blog/static/media/JavaScript.ef3eef10.png",
     "static/media/access.jpg": "/my-blog/static/media/access.985876c0.jpg",
@@ -49,8 +49,8 @@
   "entrypoints": [
     "static/js/runtime-main.1501f8e3.js",
     "static/css/2.4e5a3202.chunk.css",
-    "static/js/2.eebf85e5.chunk.js",
-    "static/css/main.bde30415.chunk.css",
-    "static/js/main.eea80e9e.chunk.js"
+    "static/js/2.2a8c2636.chunk.js",
+    "static/css/main.519ca0ca.chunk.css",
+    "static/js/main.5a1c003c.chunk.js"
   ]
 }
